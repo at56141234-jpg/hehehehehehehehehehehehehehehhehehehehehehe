@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URBAN FLEX - Premium Streetwear</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <nav id="navbar">
+        <div class="logo">URBAN FLEX</div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Shop</a></li>
+            <li><a href="#featured">Featured</a></li>
+            <li><a href="#why-us">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div style="display: flex; align-items: center; gap: 1rem;">
+            <div class="cart-icon" id="cartIcon">
+                🛒
+                <span class="cart-badge" id="cartBadge">0</span>
+            </div>
+            <div class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button class="close-cart" id="closeCart">×</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <div class="empty-cart">
+                <div class="empty-cart-icon">🛒</div>
+                <p>Your cart is empty</p>
+            </div>
+        </div>
+        <div class="cart-footer" id="cartFooter" style="display: none;">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cartTotal">$0</span>
+            </div>
+            <button class="checkout-btn" id="checkoutBtn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+    
+    <div class="toast" id="toast">Item added to cart!</div>
+
+    
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>REDEFINE YOUR STYLE</h1>
+            <p>Premium streetwear that speaks volumes</p>
+            <div class="cta-buttons">
+                <a href="#products" class="btn btn-primary">Shop Now</a>
+                <a href="#contact" class="btn btn-secondary">Contact Us</a>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="products">
+        <h2 class="section-title">Our Collection</h2>
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="clothes">Clothes</button>
+            <button class="filter-btn" data-filter="shoes">Shoes</button>
+        </div>
+        <div class="products-grid" id="productsGrid">
+            
+        </div>
+    </section>
+
+    
+    <section class="featured" id="featured">
+        <h2 class="section-title">Featured Collection</h2>
+        <div class="carousel">
+            <div class="carousel-track" id="carouselTrack">
+                <div class="carousel-item">
+                    <div class="carousel-image">
+                        <img src="https://images.unsplash.com/photo-1618453292507-4959ece6429e?w=800" alt="Winter Collection">
+                    </div>
+                    <div class="carousel-content">
+                        <h3>Winter Essentials</h3>
+                        <p>Stay warm and stylish with our premium winter collection. Featuring heavyweight hoodies, insulated jackets, and cozy essentials designed for the modern urbanite.</p>
+                        <a href="#products" class="btn btn-primary">Explore Now</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-image">
+                        <img src="https://images.unsplash.com/photo-1603808033192-082d6919d3e1?w=800" alt="Sneaker Collection">
+                    </div>
+                    <div class="carousel-content">
+                        <h3>Limited Sneakers</h3>
+                        <p>Exclusive drops and rare finds. Our curated sneaker collection brings you the most sought-after styles before they sell out.</p>
+                        <a href="#products" class="btn btn-primary">Shop Sneakers</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-image">
+                        <img src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?w=800" alt="Street Style">
+                    </div>
+                    <div class="carousel-content">
+                        <h3>Street Staples</h3>
+                        <p>Timeless pieces that define urban fashion. From graphic tees to essential outerwear, build your perfect streetwear wardrobe.</p>
+                        <a href="#products" class="btn btn-primary">View Collection</a>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-nav">
+                <span class="carousel-dot active" data-slide="0"></span>
+                <span class="carousel-dot" data-slide="1"></span>
+                <span class="carousel-dot" data-slide="2"></span>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="why-us">
+        <h2 class="section-title">Why Choose Us</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">✨</div>
+                <h3>Premium Quality</h3>
+                <p>Every piece is crafted with attention to detail and made from premium materials</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">😎</div>
+                <h3>Trendy Designs</h3>
+                <p>Stay ahead of the curve with our cutting-edge streetwear collections</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">💯</div>
+                <h3>Comfort First</h3>
+                <p>Style meets comfort in every product we offer</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">💰</div>
+                <h3>Affordable Luxury</h3>
+                <p>Premium streetwear without the premium price tag</p>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-grid">
+            <div class="contact-card" onclick="window.open('https://wa.me/9779706984499', '_blank')">
+                <div class="contact-icon">📱</div>
+                <h3>WhatsApp</h3>
+                <p>9706984499</p>
+            </div>
+            <div class="contact-card" onclick="window.location.href='mailto:at561814123@gmail.com'">
+                <div class="contact-icon">✉️</div>
+                <h3>Email</h3>
+                <p>at561814123@gmail.com</p>
+            </div>
+        </div>
+    </section>
+
+    
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">URBAN FLEX</div>
+            <div class="social-icons">
+                <a href="#" aria-label="Instagram">📷</a>
+                <a href="#" aria-label="Facebook">👍</a>
+                <a href="#" aria-label="Twitter">🐦</a>
+                <a href="#" aria-label="TikTok">🎵</a>
+            </div>
+            <p>&copy; 2024 Urban Flex. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <div class="whatsapp-float" onclick="window.open('https://wa.me/9779706984499', '_blank')">
+        💬
+    </div>
+   
+    <script src="script.js">
+        
+
+    </script>
+</body>
+</html>
